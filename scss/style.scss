@@ -1,0 +1,11 @@
+//Imported but not included in the stylesheet
+@import 'variables';
+@import 'mixins';
+
+// Actually copmiled in the style sheet, best practice (and to avoid errors) we need to import in a chronilogical order!
+@import 'reset';
+@import 'fonts';
+@import 'globals';
+@import 'header';
+@import 'content';
+@import 'footer';

@@ -1,0 +1,24 @@
+header {
+    text-align: center;
+    font-family: $open-sans;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    @include tablet {
+        flex-direction: row-reverse;
+    }
+    @include desktop {
+        justify-content: flex-end;
+        margin-left: 30px;
+    }
+    form{
+        margin-top:10px;
+    }
+}
+
+.logo {
+    margin: 1rem;
+}
+

@@ -1,9 +1,45 @@
-<html>
-    <body>
-<h1>hello world how is efsaf</h1>
+<html lang="en">
 
-<script src="jquery-3.2.1.js"></script>
-<script src="./build/js/index.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="build/css/style.css">
+    <title>Instanews</title>
+</head>
+
+<body>
+    <header>
+        <div class"drop_selector">
+            <h1>Choose a section</h1>
+            <form>
+                <select>
+                    <option>Section...</option>
+                    <option value="__home">Home</option>
+                    <option value="__arts">Arts</option>
+                    <option value="__business">Business</option>
+                    <option value="__sports">Sports</option>
+                    <option value="__technology">Technology</option>
+                    <option value="__fashion">Fashion</option>
+                </select>
+            </form>
+        </div>
+        <div class="logo">
+            <img src="images/nyt-logo.svg">
+        </div>
+    </header>
+
+    <section class="news_grid">
+        <div class="news_grid_stories">
+
+        </div>
+    </section>
+
+    <footer class="footercontainer">
+        <p>&copy; Copyright 2016 INSTANEWS</p>
+    </footer>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="./build/js/index.min.js"></script>
 </body>
 
 </html>

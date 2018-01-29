@@ -80,9 +80,6 @@ table {
   font-family: "Open Sans";
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  @media (min-width: 1240px) {
-    * {
-      margin-left: 10px; } }
 
 header {
   text-align: center;
@@ -118,12 +115,6 @@ header {
 
 .logo {
   margin: 1rem; }
-
-.news_grid_stories {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: deepseagreen; }
 
 .footercontainer {
   height: 5%;

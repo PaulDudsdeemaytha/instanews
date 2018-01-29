@@ -6,7 +6,7 @@ var eslint = require('gulp-eslint');
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var cssnano = require('gulp-cssnano');
-var prettyError = require ('gulp-prettyerror')
+var prettyError = require ('gulp-prettyerror');
 // const gulp = require('gulp');
 // const eslint = require('gulp-eslint');
 gulp.task('sass', function (){
@@ -51,13 +51,9 @@ gulp.task('browser-sync', function() {
             baseDir: "./"
         }
     });
+    gulp.watch(['*.html','build/css/*.css','build/js/*.js']).on('change', browserSync.reload);
 });
-
- 
-gulp.watch(['*.html','build/css/*.css','build/js/*.js']).on('change', browserSync.reload);
-
-
-gulp.task('default', gulp.parallel('watch', 'browser-sync'))
+gulp.task('default', gulp.parallel('watch', 'browser-sync'));
 
 // function defaultTask(done) {
 //   // place code for your default task here

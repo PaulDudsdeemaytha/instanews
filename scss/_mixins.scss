@@ -1,14 +1,13 @@
 $tablet-width: 600px;
-$desktop-width: 1240px;
-
+$desktop-width: 1000px;
 @mixin tablet {
-    @media (min-width:$tablet-width){
+    @media (min-width: $tablet-width) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media(min-width: $desktop-width){
+    @media(min-width: $desktop-width) {
         @content;
     }
 }

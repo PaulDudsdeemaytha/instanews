@@ -1,12 +1,3 @@
-// .newsgrid{
-//     background-color: green;
-//     height: 100px;;
-// }
-
-// .gallery {
-//     margin: 100px;
-// }
-
 .newsgrid {
     display: flex;
     flex-direction: column;
@@ -28,27 +19,26 @@
         width: 25%;
     }
 }
-.story-items a img{
+
+.story-items a img {
     width: 100%;
     height: 100%;
     background-size: cover;
     object-fit: cover;
-    @include tablet {
-
-    }
 }
 
-.story-items a p{
+.story-items a p {
     position: absolute;
-    height: auto; 
+    height: auto;
     width: 100%;
     margin: 0 auto;
     padding: 10px;
     line-height: 25px;
-    bottom:0;
+    bottom: 0;
     color: white;
-    background: rgba(0,0,0,0.6);
-    @include tablet {
-    
-    }
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.loading img {
+    width: 50px;
 }

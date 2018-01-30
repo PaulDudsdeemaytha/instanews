@@ -81,6 +81,9 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html, body {
+  height: 100%; }
+
 header {
   text-align: center;
   font-family: "Open Sans";
@@ -97,14 +100,17 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 85%; }
+  height: 90%;
+  margin: auto;
+  -webkit-transition: all .6s ease-in-out .6s;
+  transition: all .6s ease-in-out .6s; }
   @media (min-width: 600px) {
     header {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: reverse;
           -ms-flex-direction: row-reverse;
               flex-direction: row-reverse; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     header {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
@@ -114,10 +120,33 @@ header {
     margin-top: 10px; }
 
 .header-after {
-  height: 250px; }
+  height: 300px;
+  margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    .header-after {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      height: auto;
+      margin-bottom: 0;
+      margin-left: 60px; } }
+  @media (min-width: 1000px) {
+    .header-after {
+      margin-left: 20px; } }
 
-.logo {
-  margin: 1rem; }
+.logocontainer {
+  margin: 1rem;
+  -webkit-transition: all .6s ease-in-out .6s;
+  transition: all .6s ease-in-out .6s; }
+
+.logoafter img {
+  width: 150px;
+  -webkit-transition: all .6s ease-in-out .6s;
+  transition: all .6s ease-in-out .6s; }
+  @media (min-width: 600px) {
+    .logoafter img {
+      width: 80px;
+      margin-right: 80px; } }
 
 .newsgrid {
   display: -webkit-box;
@@ -144,7 +173,7 @@ header {
   @media (min-width: 600px) {
     .story-items {
       width: 33%; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     .story-items {
       width: 25%; } }
 
@@ -166,11 +195,14 @@ header {
   color: white;
   background: rgba(0, 0, 0, 0.6); }
 
+.loading img {
+  width: 50px; }
+
 .footercontainer {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 40px; }
-  @media (min-width: 1240px) {
+  @media (min-width: 1000px) {
     .footercontainer {
       text-align: left;
       margin-left: 30px; } }

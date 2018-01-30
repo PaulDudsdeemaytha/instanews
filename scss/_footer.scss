@@ -1,15 +1,13 @@
-.footercontainer{
-    // font-family: $opensans;
-    // height:5%;
+.footercontainer {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 40px;
     @include desktop {
         text-align: left;
         margin-left: 30px;
     }
     p {
-     color:$textgrey;
-     font-family: $open-sans;
+        color: $textgrey;
+        font-family: $open-sans;
     }
 }

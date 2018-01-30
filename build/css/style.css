@@ -97,7 +97,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 95%; }
+  height: 85%; }
   @media (min-width: 600px) {
     header {
       -webkit-box-orient: horizontal;
@@ -127,20 +127,44 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: "Open Sans"; }
+  @media (min-width: 600px) {
+    .newsgrid {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .story-items {
-  position: relative; }
+  position: relative;
+  height: 420px; }
+  @media (min-width: 600px) {
+    .story-items {
+      width: 33%; } }
+  @media (min-width: 1240px) {
+    .story-items {
+      width: 25%; } }
 
 .story-items a img {
   width: 100%;
-  position: relative;
-  background-size: cover; }
+  height: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .story-items a p {
   position: absolute;
-  top: 200px;
-  color: white; }
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 25px;
+  bottom: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.6); }
 
 .footercontainer {
   text-align: center;

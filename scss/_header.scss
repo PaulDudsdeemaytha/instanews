@@ -5,7 +5,7 @@ header {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    height: 95%;
+    height: 85%;
     @include tablet {
         flex-direction: row-reverse;
     }
@@ -28,5 +28,5 @@ header {
 }
 
 .logo-after{
-    
+    // width: 2rem;
 }

@@ -11,21 +11,44 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    font-family: $open-sans;
+    @include tablet {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
 }
 
 .story-items {
     position: relative;
+    height: 420px;
+    @include tablet {
+        width: 33%;
+    }
+    @include desktop {
+        width: 25%;
+    }
 }
 .story-items a img{
     width: 100%;
-    position: relative;
+    height: 100%;
     background-size: cover;
+    object-fit: cover;
+    @include tablet {
+
+    }
 }
 
 .story-items a p{
     position: absolute;
-//     background-color:transparent;
-    top:200px;
-// height: 100px;
-color: white;
+    height: auto; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    line-height: 25px;
+    bottom:0;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    @include tablet {
+    
+    }
 }

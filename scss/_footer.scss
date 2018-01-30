@@ -1,7 +1,9 @@
 .footercontainer{
     // font-family: $opensans;
-    height:5%;
+    // height:5%;
     text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
     @include desktop {
         text-align: left;
         margin-left: 30px;

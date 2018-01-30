@@ -1,8 +1,31 @@
 // .newsgrid{
 //     background-color: green;
-//     height: 10%;
+//     height: 100px;;
 // }
 
 // .gallery {
 //     margin: 100px;
 // }
+
+.newsgrid {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.story-items {
+    position: relative;
+}
+.story-items a img{
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.story-items a p{
+    position: absolute;
+//     background-color:transparent;
+    top:200px;
+// height: 100px;
+color: white;
+}

@@ -113,12 +113,39 @@ header {
   header form {
     margin-top: 10px; }
 
+.header-after {
+  height: 250px; }
+
 .logo {
   margin: 1rem; }
 
+.newsgrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden; }
+
+.story-items {
+  position: relative; }
+
+.story-items a img {
+  width: 100%;
+  position: relative;
+  background-size: cover; }
+
+.story-items a p {
+  position: absolute;
+  top: 200px;
+  color: white; }
+
 .footercontainer {
-  height: 5%;
-  text-align: center; }
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px; }
   @media (min-width: 1240px) {
     .footercontainer {
       text-align: left;

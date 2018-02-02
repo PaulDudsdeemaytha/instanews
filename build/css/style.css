@@ -120,14 +120,13 @@ header {
     margin-top: 10px; }
 
 .header-after {
-  height: 300px;
+  height: auto;
   margin-bottom: 20px; }
   @media (min-width: 600px) {
     .header-after {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end;
-      height: auto;
       margin-bottom: 0;
       margin-left: 60px; } }
   @media (min-width: 1000px) {
@@ -157,6 +156,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  width: 100vw;
   font-family: "Open Sans"; }
   @media (min-width: 600px) {
     .newsgrid {
@@ -196,10 +196,18 @@ header {
   background: rgba(0, 0, 0, 0.6); }
 
 .loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50, -50);
+          transform: translate(-50, -50);
   width: 50px; }
 
 .footercontainer {
+  position: absolute;
+  bottom: 0;
   text-align: center;
+  width: 100vw;
   margin-top: 30px;
   margin-bottom: 40px; }
   @media (min-width: 1000px) {

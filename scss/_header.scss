@@ -21,11 +21,10 @@ header {
 }
 
 .header-after {
-    height: 300px;
+    height: auto;
     margin-bottom: 20px;
     @include tablet {
         justify-content: flex-end;
-        height: auto;
         margin-bottom: 0;
         margin-left: 60px;
     }

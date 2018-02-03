@@ -1,5 +1,8 @@
 .footercontainer {
+    position: absolute;
+    bottom: 0;
     text-align: center;
+    width: 100vw;
     margin-top: 30px;
     margin-bottom: 40px;
     @include desktop {

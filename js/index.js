@@ -6,12 +6,16 @@
 
     $('.selection_bar').change(function () {
       $('.newsgrid').empty();
+      $('.footercontainer').css('position','absolute');
+      
       // Adding classes to adjust header when selecting an article section from form
       $('header').addClass('header-after');
       $('.logocontainer div').addClass('logoafter')
+      
       // Creates the loading wheel
       $('.newsgrid').append('<div class="loading"><img src="./images/ajax-loader.gif"></div>');
       var currentArticle = $(this).val();
+      
       // creating a variable to link to api
       var url = "https://api.nytimes.com/svc/topstories/v2/" + currentArticle + ".json";
       url += '?' + $.param({
@@ -21,17 +25,18 @@
       $.ajax({
           url: url,
           method: 'GET'
-        })
-        // what we run to actually grab the articles
-        .done(function (result) {
-          result = result.results;
-          console.log(result);
+      })
+      // what we run to actually grab the articles
+      .done(function (result) {
+        result = result.results;
+        console.log(result);
 
-          result.filter(function (result) {
-            if (result.multimedia.length !== 0) {
-              return result;
-            }
+        result.filter(function (result) {
+          if (result.multimedia.length !== 0) {
+            return result;
+          }
           }).slice(0, 12).forEach(function (result) {
+            $( '.footercontainer' ).css( 'position', 'static' );
             $('.newsgrid').append('<div class="story-items"><a href="' + result.url + '" target="_blank"><img src="' + result.multimedia[result.multimedia.length - 1].url + '"><p>' + result.abstract + '</p></a></div>');
           });
         })

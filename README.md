@@ -1,5 +1,7 @@
 # Project 2 Instanews
 
+![Alt text](images/screenshot.jpg)
+
 In this project, my to create a responsive website that was able to update itself by accessing top stories from the New York Times through using their API. 
 
 #Resources

@@ -8,12 +8,12 @@
       $('.newsgrid').empty();
       // Adding classes to adjust header when selecting an article section from form
       $('header').addClass('header-after');
-      $('.logocontainer div').addClass('logoafter')
+      $('.logocontainer div').addClass('logoafter');
       // Creates the loading wheel
       $('.newsgrid').append('<div class="loading"><img src="./images/ajax-loader.gif"></div>');
-      var currentArticle = $(this).val();
+      let currentArticle = $(this).val();
       // creating a variable to link to api
-      var url = "https://api.nytimes.com/svc/topstories/v2/" + currentArticle + ".json";
+      let url = "https://api.nytimes.com/svc/topstories/v2/" + currentArticle + ".json";
       url += '?' + $.param({
         'api-key': "2e2eb5ed7b264d32bfc53ebd0541dd9d"
       });
@@ -25,14 +25,16 @@
         // what we run to actually grab the articles
         .done(function (result) {
           result = result.results;
-          console.log(result);
 
           result.filter(function (result) {
             if (result.multimedia.length !== 0) {
               return result;
             }
           }).slice(0, 12).forEach(function (result) {
-            $('.newsgrid').append('<div class="story-items"><a href="' + result.url + '" target="_blank"><img src="' + result.multimedia[result.multimedia.length - 1].url + '"><p>' + result.abstract + '</p></a></div>');
+            let resulturl = result.url
+            let resultmultimedia = result.multimedia[result.multimedia.length - 1].url
+            let resultabstract = result.abstract
+          $('.newsgrid').append(`<div class="story-items"><a href="${resulturl}" target="_blank"><img src="${resultmultimedia}"><p>${resultabstract}</p></a></div>`);
           });
         })
         // in case of an error

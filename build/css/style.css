@@ -157,7 +157,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
-  font-family: "Open Sans"; }
+  font-family: "Open Sans", "Courier New", Courier, monospace; }
   @media (min-width: 600px) {
     .newsgrid {
       -ms-flex-wrap: wrap;

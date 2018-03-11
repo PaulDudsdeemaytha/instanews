@@ -34,7 +34,7 @@
             let resulturl = result.url
             let resultmultimedia = result.multimedia[result.multimedia.length - 1].url
             let resultabstract = result.abstract
-          $('.newsgrid').append(`<div class="story-items"><a href="${resulturl}" target="_blank"><img src="${resultmultimedia}"><p>${resultabstract}</p></a></div>`);
+            $('.newsgrid').append(`<div class="story-items"><a href="${resulturl}" target="_blank"><img src="${resultmultimedia}"><p>${resultabstract}</p></a></div>`);
           });
         })
         // in case of an error

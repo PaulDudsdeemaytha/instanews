@@ -15,13 +15,13 @@
       // creating a variable to link to api
       let url = "https://api.nytimes.com/svc/topstories/v2/" + currentArticle + ".json";
       url += '?' + $.param({
-        'api-key': "2e2eb5ed7b264d32bfc53ebd0541dd9d"
+        'api-key': "GAGjUZzA4sBuKEBwhdIDPpjpcuDc2LCR"
       });
 
       $.ajax({
-          url: url,
-          method: 'GET'
-        })
+        url: url,
+        method: 'GET'
+      })
         // what we run to actually grab the articles
         .done(function (result) {
           result = result.results;
